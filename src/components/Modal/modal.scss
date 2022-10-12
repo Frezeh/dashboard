@@ -1,0 +1,142 @@
+.select__container {
+  width: 160px;
+  height: 130px;
+  left: 1211px;
+  position: absolute;
+  top: 0px;
+  left: -0px;
+  background: #ffffff;
+  border: 1px solid rgba(84, 95, 125, 0.04);
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  margin-left: -120px;
+  //   z-index: 2
+
+  .select__body {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    // align-items: center;
+    // justify-content: center;
+
+    .select__row {
+      display: flex;
+      gap: 10px;
+      cursor: pointer;
+
+      p {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+
+        color: #545f7d;
+      }
+    }
+  }
+}
+
+.sort__container {
+  width: 270px;
+  height: 600px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  background: #ffffff;
+  border: 1px solid rgba(84, 95, 125, 0.14);
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  display: inline-block;
+
+  .sort__body {
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+
+    .sort__form {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 20px;
+
+      p {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #545f7d;
+        padding-bottom: 5px;
+      }
+
+      select {
+        width: 230px;
+        height: 40px;
+        background: #ffffff;
+        border: 1px solid #d2d8e5;
+        border-radius: 8px;
+        color: #545f7d;
+        padding-left: 5px;
+      }
+
+      input {
+        width: 225px;
+        height: 35px;
+        background: #ffffff;
+        border: 1px solid #d2d8e5;
+        border-radius: 8px;
+        color: #545f7d;
+        padding-left: 5px;
+      }
+
+      ::placeholder {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        // padding-left: 3px;
+        // color: #545f7d;
+      }
+    }
+
+    .sort__button {
+      display: flex;
+      gap: 20px;
+      padding-top: 10px;
+
+      .reset {
+        width: 98px;
+        height: 40px;
+        align-items: center;
+        border: 1px solid #545f7d;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        justify-content: center;
+        text-align: center;
+        color: #545f7d;
+        background: #ffffff;
+      }
+
+      .filter {
+        width: 98px;
+        height: 40px;
+        align-items: center;
+        background: #39cdcc;
+        border: 1px solid #39cdcc;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        justify-content: center;
+        text-align: center;
+        color: #ffffff;
+        cursor: pointer;
+      }
+    }
+  }
+
+  input:focus,
+  textarea:focus,
+  select:focus {
+    outline: none;
+  }
+}

@@ -1,0 +1,99 @@
+.user__container {
+  padding: 50px 70px;
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #213f7d;
+  }
+
+  .user__loader {
+    margin-top: 50px;
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+
+  .user__topcard {
+    display: flex;
+    gap: 50px;
+
+    .user__topcard__users {
+      width: 240px;
+      height: 160px;
+      background: #ffffff;
+      border: 1px solid rgba(33, 63, 125, 0.06);
+      box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+      border-radius: 4px;
+      margin-top: 30px;
+      margin-bottom: 50px;
+      padding-left: 20px;
+      padding-top: 15px;
+
+      h1 {
+        padding-top: 10px;
+      }
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      text-transform: uppercase;
+      color: #545f7d;
+      padding: 7px 0px;
+    }
+  }
+
+  .user__bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .user__bottom__left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 20px 0px;
+
+      p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #545f7d;
+      }
+
+      .user__bottom__layout {
+        width: 80px;
+        height: 30px;
+        background: rgba(33, 63, 125, 0.1);
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        p {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 16px;
+          color: #213f7d;
+        }
+      }
+    }
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

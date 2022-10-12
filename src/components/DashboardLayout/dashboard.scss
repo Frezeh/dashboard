@@ -1,0 +1,129 @@
+.dashboard__container {
+}
+
+.dashboard__header {
+  //   background: #ffffff;
+  box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
+  //   height: 50px;
+  display: grid;
+  grid-template-columns: 1.5fr 3fr 1.5fr;
+  //   height: 100px;
+  //   display: flex;
+  //   justify-content: space-between;
+  //   align-items: center;
+  padding: 20px;
+
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  width: 100%;
+  //   display: flex;
+  //   justify-content: space-between;
+  align-items: center;
+  //   padding-top: 10px;
+  gap: 15px;
+  z-index: 1;
+
+  .dashboard__search {
+    position: relative;
+
+    input {
+      background: #ffffff;
+      border: 1px solid #d2d8e5;
+      border-radius: 8px;
+      width: 400px;
+      height: 40px;
+      padding-left: 10px;
+    }
+
+    input:focus {
+      outline: none;
+    }
+
+    ::placeholder {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: #545f7d;
+    }
+
+    .dashboard__search__icon {
+      position: absolute;
+      width: 58px;
+      height: 45px;
+      background: #39cdcc;
+      top: 0%;
+      left: 45%;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 5px;
+      cursor: pointer;
+      //   border-radius: 8px;
+    }
+  }
+
+  .dashboard__end {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+
+    h1 {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      text-decoration-line: underline;
+      padding-top: 5px;
+      color: #213f7d;
+    }
+
+    img {
+      width: 19.67px;
+      height: 22.74px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      padding-top: 5px;
+      color: #213f7d;
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .dashboard__avatar {
+        width: 48px;
+        height: 50px;
+        border-radius: 50%;
+      }
+      img {
+        width: 7.34px;
+        height: 4.15px;
+        // align-self: bottom;
+      }
+    }
+  }
+}
+// dashboard__avatar
+.dashboard__body {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  margin-top: 85px;
+
+  .dashboard__sidemenu {
+    background: #ffffff;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.04);
+    // height: 100vh;
+    // width: 283px;
+  }
+
+  .dashboard__content {
+    background: #e5e5e5;
+    height: 150vh;
+  }
+}

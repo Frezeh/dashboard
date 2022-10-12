@@ -1,0 +1,54 @@
+.pill_inactive {
+  width: 80px;
+  height: 30px;
+//   background: rgba(33, 63, 125, 0.1);;
+  background: #e3e5f8;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #545f7d;
+  }
+}
+
+.pill_active {
+  width: 80px;
+  height: 30px;
+  background: #ebfaef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #39cd62;
+  }
+}
+
+.pill_blacklist {
+  width: 90px;
+  height: 30px;
+  background: #fed4df;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #e4033b;
+  }
+}

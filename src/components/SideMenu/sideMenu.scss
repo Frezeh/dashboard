@@ -1,0 +1,88 @@
+.sidemenu {
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  height: 100%;
+  // width: auto;
+  padding-top: 100px;
+  // overflow-y: scroll;
+  // overflow-x: hidden;
+
+  .sidemenu__row {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 20px;
+  }
+
+  // .sidemenu__switch {
+  //   display: flex;
+  //   flex-direction: row;
+  //   gap: 10px;
+  //   padding: 20px;
+  // }
+
+  .sidemenu__content {
+    padding: 15px 0px;
+
+    h1 {
+      padding: 0px 20px;
+    }
+  }
+
+  .sidemenu__active {
+    // width: 283px;
+    // height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    margin: 5px 0px;
+    // background: #39cdcc;
+    background: #f5fcfc;
+    cursor: pointer;
+    // opacity: 0.4;
+
+    div {
+      width: 3px;
+      height: 40px;
+      background-color: #39cdcc;
+    }
+  }
+
+  .sidemenu__inactive {
+    // width: 283px;
+    // height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    margin: 5px 0px;
+    // padding: 10px 0px;
+    cursor: pointer;
+
+    div {
+      width: 3px;
+      height: 40px;
+    }
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #213f7d;
+  }
+
+  h1 {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #545f7d;
+  }
+}
+
+.sidemenu:hover {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}

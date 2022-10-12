@@ -4,7 +4,7 @@ import { UsersContext } from "../../context/userContext";
 import { SortModalProps } from "../../types";
 
 //use form
-export default function SortModal({setSortModal}: SortModalProps) {
+export default function SortModal({setSortModal}: SortModalProps): JSX.Element {
   const wrapperRef = useRef<HTMLDivElement>(null);
   const { users } = useContext(UsersContext);
   const [organization, setOrganization] = useState<string>("");

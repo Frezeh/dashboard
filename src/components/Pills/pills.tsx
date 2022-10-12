@@ -1,6 +1,6 @@
 import "./pills.scss";
 
-function Pills({ status }: { status: string | undefined }) {
+function Pills({ status }: { status: string | undefined }): JSX.Element {
   return (
     <div
       className={

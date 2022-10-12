@@ -70,7 +70,7 @@ export default function User(): JSX.Element {
           <Table currentTableData={currentTableData} />
 
           {/* Pagination */}
-          <div className="user__bottom">
+          {/* <div className="user__bottom">
             <div className="user__bottom__left">
               <p>Showing</p>
               <div className="user__bottom__layout">
@@ -85,7 +85,7 @@ export default function User(): JSX.Element {
               pageSize={PageSize}
               onPageChange={(page) => setCurrentPage(page)}
             />
-          </div>
+          </div> */}
         </>
       )}
     </div>

@@ -1,5 +1,5 @@
 # E-commerce mockup
-> Figma e-commerce mockup with paystack checkout
+<!-- > Figma e-commerce mockup with paystack checkout -->
 
 ### Run locally
 

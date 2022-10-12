@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import { TableProps } from "../../types";
 import "./table.scss";
 import Filter from "../../assets/sort.svg";

@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import "./generalDetails.scss";
 import { Users } from "../../types";
 
-function GeneralDetails() {
+function GeneralDetails(): JSX.Element {
   const location = useLocation();
   const state: Users = location.state
 

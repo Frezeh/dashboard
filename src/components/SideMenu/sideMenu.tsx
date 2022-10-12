@@ -6,7 +6,7 @@ import Briefcase from "../../assets/briefcase.svg";
 import Dropdown from "../../assets/dropdown.svg";
 import { businesses, customers, settings } from "../../utils/dashboardData";
 
-function SideMenu() {
+function SideMenu(): JSX.Element {
   const [active, setActive] = useState<string>("Users");
   const navigate = useNavigate();
 
@@ -17,6 +17,12 @@ function SideMenu() {
 
   return (
     <div className="sidemenu">
+      {/* <div className="sidemenu__mobile">
+        <img src={Dropdown} alt="dropdown" />
+        <p>Dashboard</p>
+        <p>{active}</p>
+      </div> */}
+
       <div className="sidemenu__row">
         <img src={Briefcase} alt={"briefcase"} />
         <p>Switch Organization</p>
@@ -49,7 +55,9 @@ function SideMenu() {
         <h1>BUSINESSES</h1>
         {businesses.map((data) => (
           <div
-            className={active === data.name ? "sidemenu__active" : "sidemenu__inactive"}
+            className={
+              active === data.name ? "sidemenu__active" : "sidemenu__inactive"
+            }
             onClick={() => handleSwitch(data.name)}
             key={data.id}
           >
@@ -64,7 +72,9 @@ function SideMenu() {
         <h1>SETTINGS</h1>
         {settings.map((data) => (
           <div
-            className={active === data.name ? "sidemenu__active" : "sidemenu__inactive"}
+            className={
+              active === data.name ? "sidemenu__active" : "sidemenu__inactive"
+            }
             onClick={() => handleSwitch(data.name)}
             key={data.id}
           >

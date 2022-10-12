@@ -12,7 +12,7 @@ export default function SelectModal({
   selectModal,
   setSelectModal,
   user,
-}: SelectModalProps) {
+}: SelectModalProps): JSX.Element {
   const wrapperRef = useRef<HTMLDivElement>(null);
   const { blacklistUser, activateUser } = useContext(UsersActionsContext);
   const navigate = useNavigate();

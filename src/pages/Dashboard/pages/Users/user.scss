@@ -1,3 +1,5 @@
+@import "../../../../global.scss";
+
 .user__container {
   padding: 50px 70px;
   display: flex;
@@ -23,6 +25,16 @@
   .user__topcard {
     display: flex;
     gap: 50px;
+
+    @include mobile {
+      display: block;
+      flex-direction: column;
+
+     .user__topcard__users {
+      padding-left: 10px;
+      padding-top: 10px;
+     }
+    }
 
     .user__topcard__users {
       width: 240px;

@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Navigate, Route, Routes } from "react-router-dom";
+import "./global.scss"
 import { useContext } from "react";
 import DashboardLayout from "./components/DashboardLayout/dashboardLayout";
 import Login from "./pages/Login/login";

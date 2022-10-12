@@ -9,7 +9,7 @@ import Dropdown from "../../assets/dropdownSmall.svg";
 import Image from "../../assets/image.svg";
 import { DashboardLayoutProps } from "../../types";
 
-function DashboardLayout({ children }: DashboardLayoutProps) {
+function DashboardLayout({ children }: DashboardLayoutProps): JSX.Element {
   const [search, setSearch] = useState<string>("");
 
   return (
@@ -34,9 +34,9 @@ function DashboardLayout({ children }: DashboardLayoutProps) {
           <h1>Docs</h1>
           <img src={Alarm} alt="alert" />
           <div>
-            <img src={Image} alt="alert" className="dashboard__avatar"/>
+            <img src={Image} alt="alert" className="dashboard__avatar" />
             <p>Adedeji</p>
-            <img src={Dropdown} alt="dropdown" style={{marginTop: 10}}/>
+            <img src={Dropdown} alt="dropdown" style={{ marginTop: 10 }} />
           </div>
         </div>
       </div>

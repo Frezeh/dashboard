@@ -1,28 +1,23 @@
-.dashboard__container {
-}
+@import "../../global.scss";
 
 .dashboard__header {
-  //   background: #ffffff;
   box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
-  //   height: 50px;
   display: grid;
   grid-template-columns: 1.5fr 3fr 1.5fr;
-  //   height: 100px;
-  //   display: flex;
-  //   justify-content: space-between;
-  //   align-items: center;
   padding: 20px;
-
   position: fixed;
   background-color: #fff;
   top: 0;
   width: 100%;
-  //   display: flex;
-  //   justify-content: space-between;
   align-items: center;
-  //   padding-top: 10px;
   gap: 15px;
   z-index: 1;
+
+  @include mobile {
+   display: block;
+   z-index: 2;
+
+  }
 
   .dashboard__search {
     position: relative;
@@ -62,6 +57,11 @@
       margin-left: 5px;
       cursor: pointer;
       //   border-radius: 8px;
+    }
+
+    @include mobile {
+      visibility: hidden;
+      width: 0vw;
     }
   }
 

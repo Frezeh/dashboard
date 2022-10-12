@@ -1,12 +1,32 @@
+@import "../../global.scss";
+
 .sidemenu {
   position: fixed;
   background-color: #fff;
   top: 0;
   height: 100%;
-  // width: auto;
   padding-top: 100px;
-  // overflow-y: scroll;
-  // overflow-x: hidden;
+
+  @include mobile {
+    padding-top: 170px; 
+    display: none;
+    // height: 0%;
+
+    .sidemenu__mobile {
+      border: 1px solid #213f7d;
+      height: 20px;
+      display: flex;
+      gap: 50px;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 20%;
+      // padding-right: 150px;
+      // width: 100;
+      // position: fixed;
+      // top: 0;
+      // margin-top: 50px;
+    }
+  }
 
   .sidemenu__row {
     display: flex;

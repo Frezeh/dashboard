@@ -73,7 +73,7 @@ function Login(): JSX.Element {
             )}
           </div>
           <h2>Forgot PASSWORD?</h2>
-          <button type="submit" className="btn btn-primary">
+          <button type="submit">
             Login
           </button>
         </form>

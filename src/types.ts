@@ -66,6 +66,7 @@ export type UserActions = {
   blacklistUser: (id: string) => void;
   activateUser: (id: string) => void;
   loginUser: () => void;
+  sortUser: (filter: SortProps) => void;
 };
 
 export type usePaginationProps = {
@@ -95,4 +96,13 @@ export type SelectModalProps = {
   selectModal: string;
   setSelectModal: Dispatch<SetStateAction<string>>;
   user: Users;
+};
+
+export type SortProps = {
+  createdAt?: string;
+  orgName?: string;
+  userName?: string;
+  email?: string;
+  phoneNumber?: string;
+  status?: string;
 };

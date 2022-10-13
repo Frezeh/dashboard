@@ -1,5 +1,11 @@
 import { createContext, useCallback, useState } from "react";
-import { UserActions, Users, UsersProviderProps, UserState } from "../types";
+import {
+  SortProps,
+  UserActions,
+  Users,
+  UsersProviderProps,
+  UserState,
+} from "../types";
 import { parseStatusToData } from "../utils/parseStatus";
 import { getItem, saveItem } from "../utils/storage";
 
@@ -47,8 +53,7 @@ export function UsersProvider({ children }: UsersProviderProps) {
   /**
    * Handle blacklisting user
    */
-  const blacklistUser = useCallback(
-    (id: string) => {
+  const blacklistUser = useCallback((id: string) => {
       // Filter the user data and update status
       // After making the required updates,
       // call saveUser on the mutated reference
@@ -81,9 +86,34 @@ export function UsersProvider({ children }: UsersProviderProps) {
       saveUser(newUserData);
     },[users]);
 
+    /**
+     * Handle sorting user
+     */
+  const sortUser = useCallback((filter: SortProps) => {
+      // Sort the user data by the parameters given
+      // After making the required updates,
+      // call setUsers on the mutated reference
+      let newUserData = users;
+
+      newUserData = newUserData.filter((item) => {
+        for (let key in filter) {
+          if (
+            item[key as keyof typeof filter] === undefined ||
+            item[key as keyof typeof filter] !=
+              filter[key as keyof typeof filter]
+          ) {
+            return false;
+          }
+        }
+        return true;
+      });
+
+      setUsers(newUserData);
+    },[]);
+
   return (
     <UsersActionsContext.Provider
-      value={{ loadUserData, blacklistUser, activateUser, loginUser }}
+      value={{ loadUserData, blacklistUser, activateUser, loginUser, sortUser }}
     >
       <UsersContext.Provider value={{ users, isAuthenticated }}>
         {children}

@@ -1,7 +1,9 @@
 @import "../../global.scss";
 
 .table__container {
-  overflow-x: auto;
+  @include mobile {
+    overflow-x: auto;
+  }
 }
 
 table {

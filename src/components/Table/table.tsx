@@ -86,9 +86,6 @@ export const Table = ({ currentTableData }: TableProps): JSX.Element => {
               )}
             </tr>,
             <div className="table__divider" key={user.id + 1} />,
-            // <tr key={(user.id) + 1} className="table__divider">
-            //   <td>www</td>
-            // </tr>,
           ])}
         </tbody>
       </table>

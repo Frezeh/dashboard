@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .select__container {
   width: 160px;
   height: 130px;
@@ -10,15 +12,16 @@
   box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
   border-radius: 4px;
   margin-left: -120px;
-  //   z-index: 2
+
+  @include mobile {
+    margin-left: -170px;
+  }
 
   .select__body {
     display: flex;
     flex-direction: column;
     gap: 15px;
     padding: 20px;
-    // align-items: center;
-    // justify-content: center;
 
     .select__row {
       display: flex;

@@ -19,7 +19,7 @@ export const UsersActionsContext = createContext<UserActions>(
 
 export function UsersProvider({ children }: UsersProviderProps) {
   const [users, setUsers] = useState<Users[]>(getItem<Users[]>("users") || []);
-  const [isAuthenticated, setIsAuthenticated] = useState<boolean>((getItem<boolean>("isAuthenticated") || false));
+  const [isAuthenticated, setIsAuthenticated] = useState<boolean>(getItem<boolean>("isAuthenticated") || false);
 
   const saveUser = (user: Users[]) => {
     setUsers([...user]);
@@ -30,8 +30,8 @@ export function UsersProvider({ children }: UsersProviderProps) {
    * Handle login
    */
   const loginUser = () => {
-    setIsAuthenticated(true);
     saveItem<boolean>("isAuthenticated", true);
+    setIsAuthenticated(true);
   };
 
   /**

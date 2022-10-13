@@ -74,6 +74,11 @@
       gap: 10px;
       padding: 20px 0px;
 
+      @include mobile {
+       visibility: hidden;
+       width: 0vw;
+      }
+
       p {
         font-weight: 400;
         font-size: 14px;

@@ -22,7 +22,7 @@ export const Table = ({ currentTableData }: TableProps): JSX.Element => {
   const [sortModal, setSortModal] = useState<number>(-1);
 
   return (
-    <>
+    <div className="table__container">
       <table>
         <thead>
           <tr>
@@ -92,6 +92,6 @@ export const Table = ({ currentTableData }: TableProps): JSX.Element => {
           ])}
         </tbody>
       </table>
-    </>
+    </div>
   );
 };

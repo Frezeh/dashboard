@@ -36,7 +36,7 @@ function DashboardLayout({ children }: DashboardLayoutProps): JSX.Element {
           <div>
             <img src={Image} alt="alert" className="dashboard__avatar" />
             <p>Adedeji</p>
-            <img src={Dropdown} alt="dropdown" style={{ marginTop: 10 }} />
+            <img src={Dropdown} alt="dropdown" className="dashboard__dropdown"/>
           </div>
         </div>
       </div>

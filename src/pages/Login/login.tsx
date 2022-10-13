@@ -13,17 +13,18 @@ function Login(): JSX.Element {
   const [password, setPassword] = useState<string>("");
   const [passwordShown, setPasswordShown] = useState<boolean>(false);
 
-  useEffect(() => {
-    //is user is authenticated navigate to dashboard
-    if (isAuthenticated) {
-      navigate("/dashboard/users");
-    }
+  // useEffect(() => {
+  //   //is user is authenticated navigate to dashboard
+  //   if (isAuthenticated) {
+  //     navigate("/dashboard/users");
+  //   }
 
-  }, [isAuthenticated]);
+  // }, [isAuthenticated]);
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     loginUser();
+    navigate("/dashboard/users");
   };
 
   return (
